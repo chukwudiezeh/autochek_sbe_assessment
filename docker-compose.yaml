@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  autochek-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: autochek-api
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env

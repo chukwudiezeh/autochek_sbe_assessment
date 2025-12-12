@@ -1,47 +1,103 @@
----
+# Autochek Backend Test
+
+A comprehensive NestJS application for vehicle valuation and financing services.
 
 ## Quick Start Guide
 
+### Option 1: Run with Docker
+
 1. **Clone/Download** this code structure
 
-2. **Install dependencies:**
+2. **Set up environment:**
+   ```bash
+   cp .env.sample .env
+   # Edit .env file with your configuration
+   ```
+
+3. **Run with Docker:**
+   ```bash
+   # Start - using a custom command
+   npm run docker:start
+
+   # Stop
+   npm run docker:stop
+   ```
+
+4. **Access the application:**
+   - API: http://localhost:3000
+   
+
+### Option 2: Run Locally
+
+1. **Clone/Download** this code structure
+
+2. **Set up environment:**
+   ```bash
+   cp .env.sample .env
+   # Edit .env file with your configuration
+   ```
+
+3. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Run the application:**
+4. **Run the application:**
    ```bash
    npm run start:dev
    ```
 
-4. **Seed sample data:**
+5. **Seed sample data:**
    ```bash
    npm run seed
    ```
 
-5. **Access Swagger Documentation:**
-   Open http://localhost:3000/docs in your browser
+6. **Access the application:**
+   - API: http://localhost:3000
 
-6. **Run tests:**
-   ```bash
-   npm run test
-   npm run test:e2e
-   ```
+
+## API Documentation
+
+Once the application is running, you can access:
+
+- **Swagger Documentation**: http://localhost:3000/docs
 
 ## Key Features Implemented
 
-[x] Complete NestJS application structure  
-[x] TypeORM with SQLite (in-memory)  
-[x] RESTful API endpoints  
-[x] Vehicle data ingestion with validation  
-[x] VIN lookup integration (with fallback simulation)  
-[x] Automated vehicle valuation  
-[x] Loan eligibility checks (LTV, DTI, income, employment, vehicle age)  
-[x] Automatic loan offer generation (3 options per approval)  
-[x] Comprehensive error handling  
-[x] Input validation with class-validator  
-[x] Swagger API documentation  
-[x] Database seeding script  
-[x] E2E tests  
-[x] Professional logging  
-[x] Clean, documented code  
+[✓] TypeORM with SQLite database
+[✓] RESTful API endpoints
+[✓] Vehicle data ingestion with validation
+[✓] VIN lookup integration (with fallback simulation)
+[✓] Automated vehicle valuation
+[✓] Loan eligibility checks (LTV, DTI, income, employment, vehicle age)
+[✓] Automatic loan offer generation (3 options per approval)
+[✓] Comprehensive error handling
+[✓] Input validation with class-validator
+[✓] Swagger API documentation
+[✓] Database seeding script
+[✓] E2E tests
+[✓] Logging
+[✓] Docker containerization
+[✓] Clean, documented code
+
+
+## Testing
+
+```bash
+# Local testing
+npm run test
+npm run test:e2e
+
+# Docker testing
+docker-compose exec app npm run test
+```
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Port conflicts**: Make sure ports 3000, 6379, and 80 are available
+2. **Docker permissions**: Ensure Docker daemon is running
+3. **Environment variables**: Check your `.env` file configuration
+
+
