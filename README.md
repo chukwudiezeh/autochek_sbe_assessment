@@ -20,7 +20,7 @@
    ```
 
 5. **Access Swagger Documentation:**
-   Open http://localhost:3000/api in your browser
+   Open http://localhost:3000/docs in your browser
 
 6. **Run tests:**
    ```bash
