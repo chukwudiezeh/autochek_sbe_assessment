@@ -4,7 +4,12 @@ A comprehensive NestJS application for vehicle valuation and financing services.
 
 ## Quick Start Guide
 
-### Option 1: Run with Docker
+### Option 1: Test Live
+1. Live URLs
+- API: https://https://autochek-sbe-assessment.onrender.com
+- Documentation: https://autochek-sbe-assessment.onrender.com/docs
+
+### Option 2: Run locally with Docker
 
 1. **Clone/Download** this code structure
 
@@ -27,7 +32,7 @@ A comprehensive NestJS application for vehicle valuation and financing services.
    - API: http://localhost:3000
    
 
-### Option 2: Run Locally
+### Option 3: Run Locally
 
 1. **Clone/Download** this code structure
 
