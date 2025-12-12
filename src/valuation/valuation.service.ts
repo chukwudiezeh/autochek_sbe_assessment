@@ -79,7 +79,7 @@ export class ValuationService {
     // VIN Lookup API integration
     const options = {
       method: 'GET',
-      url: this.rapidApiHost + '/vehicle-lookup',
+      url: 'https://' + this.rapidApiHost + '/vehicle-lookup',
       params: { vin },
       headers: {
         'X-RapidAPI-Key': this.rapidApiKey,
